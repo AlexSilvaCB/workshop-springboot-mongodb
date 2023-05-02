@@ -7,7 +7,7 @@ import java.util.Set;
 
 public class Post {
 
-	private Long id;
+	private String id;
 	private Instant date;
 	private String title;
 	private String body;
@@ -18,7 +18,7 @@ public class Post {
 	public Post() {
 	}
 
-	public Post(Long id, Instant date, String title, String body, User author) {
+	public Post(String id, Instant date, String title, String body, User author) {
 		super();
 		this.id = id;
 		this.date = date;
@@ -27,11 +27,11 @@ public class Post {
 		this.author = author;
 	}
 
-	public Long getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 

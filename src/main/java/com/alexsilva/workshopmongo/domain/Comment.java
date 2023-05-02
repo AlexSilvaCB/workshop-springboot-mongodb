@@ -6,7 +6,7 @@ import java.util.Objects;
 
 public class Comment {
 	
-	private Long id;
+	private String id;
 	private String text;
 	private Instant date;
 	
@@ -16,7 +16,7 @@ public class Comment {
 	public Comment() {
 	}
 
-	public Comment(Long id, String text, Instant date, Post posts, User author) {
+	public Comment(String id, String text, Instant date, Post posts, User author) {
 		super();
 		this.id = id;
 		this.text = text;
@@ -25,11 +25,11 @@ public class Comment {
 		this.author = author;
 	}
 
-	public Long getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 
